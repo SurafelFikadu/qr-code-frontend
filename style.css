@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-gray);
+    font-family: "Outfit";
+    height: 100vh;
+}
+
+main {
+    background-color: var(--white);
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    width: 660px;
+    /* height: 800px; */
+}
+
+img {
+    width: 600px;
+    border-radius: 20px;
+}
+
+main h1 {
+    width: 600px;
+    font-size: 49px;
+    font-weight: 700;
+    padding: 10px;
+    line-height: 64px;
+    margin-top: 20px;
+    color: var(--Dark-blue);
+}
+
+main p {
+    font-size: 30px;
+    width: 600px;
+    line-height: 30px;
+    padding: 0px 40px;
+    line-height: 40px;
+    color: var(--Grayish-blue);
+    margin-bottom: 50px;
+}
+
+@media(max-width: 600px) {
+    main {
+        width: 415px;
+    }
+
+    img {
+        width: 375px;
+    }
+
+    main h1 {
+        width: 375px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    main p {
+        width: 375px;
+        font-size: 21px;
+        padding: 0 10px;
+        line-height: 25px;
+    }
+}
